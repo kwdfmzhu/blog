@@ -67,3 +67,6 @@ SITEMAP = {
         "pages": "monthly",
     }
 }
+
+DISQUS_SITENAME = "blog-notmyidea"
+
