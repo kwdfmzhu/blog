@@ -1,6 +1,6 @@
 Title: 使用pelican和github搭建个人blog
 Date: 2016-02-29
-Category:
+Category: Tech
 Tag: pelican, github, blog
 
 -------
@@ -60,17 +60,29 @@ pelican-quickstart
 make publish
 make serve
 ```
-
-打开浏览器，输入127.0.0.1:8000即可看到博客
+打开浏览器，输入127.0.0.1:8000 即可看到博客
 
 ####3.5. 选择主题
 [pelican-themes](https://github.com/getpelican/pelican-themes) 上有很多主题， git clone后可以使用如下命令安装任一主题
 ```bash
 pelican-themes -i XXXXXX
 ```
-安装完成后在pelicanconf.py文件中修改THEME 容，如安装了pelican-bootstrap3主题，那么修改THEME ="pelican-bootstrap3"，重起server即可看到主题修改
+安装完成后在pelicanconf.py文件中修改THEME 容，如安装了pelican-bootstrap3主题，那么修改THEME ="pelican-bootstrap3"，重启即可看到主题修改
 
-####3.6. 其他功能
+####3.6. 设置favicon.ico
+favicon.ico 即Favorites Icon的缩写，其可以让浏览器除显示相应的标题外，还以图标的方式区别不同的网站。
+1. 选择图片，生成.ico文件(可直接使用网站生成如 [在线制作ico图标](http://www.bitbug.net/))
+2. 将图片命名成favicon.ico，放置到与Makefile同级目录
+3. 修改Makefile，添加移动favicon.ico功能
+```bash
+FAVICONICO=$(BASEDIR)/favicon.ico
+
+publish: clean                                                                                                                                                                                           
+    $(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+    cp $(FAVICONICO) $(OUTPUTDIR)
+```
+
+####3.X. 其他功能
 其他还有很多功能如评论系统，分析系统，站内搜索可以添加，后续会更新
 
 ### 4. 使用github发布博客

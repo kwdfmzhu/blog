@@ -1,6 +1,6 @@
 Title: ABOUT ME
 Date: 2016-03-07
-Category: about
+Category: About
 Tag:
 
 It's me
