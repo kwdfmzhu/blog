@@ -10,7 +10,7 @@ PATH = 'content'
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = u'zh'
-DATE_FORMATS = {'zh':'%Y-%m-%d %H:%M'}
+DATE_FORMATS = {'zh':'%Y-%m-%d'}
 
 GITHUB_URL = 'https://github.com/kwdfmzhu'
 
