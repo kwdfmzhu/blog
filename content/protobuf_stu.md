@@ -1,15 +1,16 @@
 Title: protobuf 的简单介绍
 Date: 2016-02-29
-Category: 技术
+Category:
 Tag: protobuf 
 
-##protobuf 的简单介绍
+-----
 ### protobuf 是什么
 protobuf 全称 Google Protocol Buffers，是Google公司内部的混合语言数据标准。在2008年7月7号将其作为开源项目对外公布。
 
 protobuf 是一种轻便高效的结构化数据存储格式，可以用于结构化数据串行化，很适合做数据存储或 RPC 数据交换格式。它可用于通讯协议、数据存储等领域的语言无关、平台无关、可扩展的序列化结构数据格式。
 
 protobuf的[源码](https://github.com/google/protobuf)，protobuf的[官方文档](https://developers.google.com/protocol-buffers/docs/overview)， 有兴趣的同学可以深入研究一下
+
 
 ### 为什么要使用 protobuf
 protobuf是一种结构化数据存储格式，类似的比较常见的有xml和json。那么和他们比较，protobuf又有什么优点？
