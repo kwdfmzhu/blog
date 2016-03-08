@@ -18,11 +18,11 @@ GITHUB_URL = 'https://github.com/kwdfmzhu'
 #THEME = 'cebong'
 #THEME = 'pelican-bootstrap3'
 #THEME = 'pelican-hss' #OK
-THEME = 'pelican-fresh'
-
+#THEME = 'pelican-fresh'
+THEME = 'tuxlite_tbs'
+#
 #ITELOGO = 'images/logo.png'
 #FAVICON = 'images/logo.png'
-
 
 FEED_ALL_RSS =  'feeds/all.rss.xml'
 
@@ -35,13 +35,15 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-            ('Github', 'https://github.com/kwdfmzhu'),
+            ('Google', 'https://www.google.com/ncr'),
+            ('Python', 'http://python.org/'),
+            ('Pelican', 'http://docs.getpelican.com/'),
         )
 
 # Social widget
 SOCIAL = (
             ('Github', 'https://github.com/kwdfmzhu'),
-            (u'知乎', 'https://www.zhihu.com/people/kwdfmzhu'),
+            (u'知乎', 'http://www.zhihu.com/people/kwdfmzhu'),
          )
 
 DEFAULT_PAGINATION = 10
@@ -50,18 +52,18 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 
-#PLUGIN_PATH = u"pelican-plugins"
-#PLUGINS = ["sitemap"]
-#SITEMAP = {
-#    "format": "xml",
-#    "priorities": {
-#        "articles": 0.7,
-#        "indexes": 0.5,
-#        "pages": 0.3,
-#    },
-#    "changefreqs": {
-#        "articles": "monthly",
-#        "indexes": "daily",
-#        "pages": "monthly",
-#    }
-#}
+PLUGIN_PATHS = [u"/home/zhu_kewei/work/git/kwdfmzhu/gitblog/pelican-plugins"]
+PLUGINS = ["sitemap"]
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.7,
+        "indexes": 0.5,
+        "pages": 0.3,
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    }
+}

@@ -34,29 +34,33 @@ pelican-quickstart
 - pelican-quickstart 是pelican 自带命令，根据提示一步步输入相应的配置项，不知道如何设置的接受默认即可，后续可以通过编辑pelicanconf.py文件更改配置
 
 结束后生成目录如下
- > blog/
- >├── content              # 存放输入的Markdown文件夹
- >├── output               # 生成的输出文件
- >├── develop_server.sh    # 开启测试服务器脚本
- >├── Makefile             # 管理博客的Makefile
- >├── pelicanconf.py       # 主配置文件
- >└── publishconf.py       # 主发布文件
+```bash
+ blog/
+ ├── content              # 存放输入的Markdown文件夹
+ ├── output               # 生成的输出文件
+ ├── develop_server.sh    # 开启测试服务器脚本
+ ├── Makefile             # 管理博客的Makefile
+ ├── pelicanconf.py       # 主配置文件
+ └── publishconf.py       # 主发布文件
+```
 
 ####3.3. 写博客内容
 进入到content 目录下，用Markdown 开始编写内容。Markdown语法简单，Google即可
 - Markdown 在线编辑器推荐使用[马克飞象](https://maxiang.io/)，个人使用不错。本地编辑器使用ReText。
 - 切记在每个文件前四行输入如下
-> Title: 文章标题
-> Date: 2013-04-18
-> Category: 文章类别
-> Tag: 标签1, 标签2
-
+```bash
+ Title: 文章标题
+ Date: 2013-04-18
+ Category: 文章类别
+ Tag: 标签1, 标签2
+```
 ####3.4. 预览博客
 输入以下命令
 ``` bash
 make publish
 make serve
 ```
+
 打开浏览器，输入127.0.0.1:8000即可看到博客
 
 ####3.5. 选择主题
