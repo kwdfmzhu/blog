@@ -68,5 +68,5 @@ SITEMAP = {
     }
 }
 
-DISQUS_SITENAME = "blog-notmyidea"
+DISQUS_SITENAME = "kwdfmzhu"
 
