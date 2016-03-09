@@ -82,6 +82,12 @@ publish: clean
     cp $(FAVICONICO) $(OUTPUTDIR)
 ```
 
+####3.7. 设置评论系统
+在[Disqus](https://disqus.com/admin/signup)上申请一个站点，记牢Shortname。 在pelicanconf.py添加
+```bash
+DISQUS_SITENAME = Shortname
+```
+
 ####3.X. 其他功能
 其他还有很多功能如评论系统，分析系统，站内搜索可以添加，后续会更新
 
