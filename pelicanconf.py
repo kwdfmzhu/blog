@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'kwdfm'
 SITENAME = u"kwdfm的后花园"
-SITEURL = ''
+SITEURL = 'http://kwdfmzhu.github.io/'
 
 PATH = 'content'
 TIMEZONE = 'Asia/Shanghai'
