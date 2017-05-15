@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'kwdfm'
-SITENAME = u"kwdfm的后花园"
+AUTHOR = u'kwdfmzhu'
+SITENAME = u"kwdfmzhu的后花园"
 SITEURL = 'http://kwdfmzhu.github.io/'
 
 PATH = 'content'
@@ -52,7 +52,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 
-PLUGIN_PATHS = [u"/home/zhu_kewei/work/git/kwdfmzhu/gitblog/pelican-plugins"]
+PLUGIN_PATHS = [u"/home/zhukewei/pelican-plugins"]
 PLUGINS = ["sitemap"]
 SITEMAP = {
     "format": "xml",
